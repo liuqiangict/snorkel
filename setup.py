@@ -14,7 +14,7 @@ version = pattern.search(text).group(1)
 
 # Extract long_description
 path = os.path.join(directory, 'README.md')
-with open(path) as read_file:
+with open(path, encoding='utf-8') as read_file:
     long_description = read_file.read()
 
 setuptools.setup(
